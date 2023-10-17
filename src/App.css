@@ -3,7 +3,7 @@
   src: url(./Asserts/Fonts/Fonts/Gilroy/Gilroy-BoldItalic.ttf);
 }
 body{
-  font-family: "Gilroy-Medium";
+  /* font-family: "Gilroy-Medium"; */
 }
 *{
   margin: 0px;
