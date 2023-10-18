@@ -1,61 +1,93 @@
-.workmain{
-display: flex;
+.workmain {
+    display: flex;
 }
-.workleft{
-width: 60%;
-background-image: url('../../Asserts/Images/background.png');
-height: 100vh;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: fixed;
+
+.workleft {
+    width: 60%;
+    background-image: url('../../Asserts/Images/background.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
 }
-.worklogo{
+
+.worklogo {
     padding: 40px 0px 0px 40px;
     width: 150px;
 }
 
-.workleft div:nth-of-type(1){
-width: 100%;
-height: 85vh;
-}
-.workleft div:nth-of-type(1) img{
-width: 100%;
-height: 86vh;
+.workleft div:nth-of-type(1) {
+    width: 100%;
+    height: 85vh;
 }
 
-.workright{
-width: 40%;
-display: flex;
-justify-content: center;
-align-items: center;
-background: #EAEDFE;
+.workleft div:nth-of-type(1) img {
+    width: 100%;
+    height: 86vh;
 }
 
-.formcontain{
-
+.workright {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAEDFE;
 }
-.formcontain div:nth-of-type(1){
+
+.formcontain {}
+
+.formcontain div:nth-of-type(1) {
     color: #252525;
     font-family: Gilroy-SemiBold;
     font-size: 32px;
     font-weight: bold;
 }
-.formcontain div:nth-of-type(2){
-font-size: 18px;
-font-weight: 500;
-padding-top: 15px;
-color: #252525db;
-font-family: Gilroy-Regular;
+
+.formcontain div:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+    color: #252525db;
+    font-family: Gilroy-Regular;
 }
-.formcontain form{
+
+.formcontain form {
     padding-top: 30px;
 }
-.formcontain form label{
+
+.uploadimage {
+    width: 170px;
+    height: 150px;
+    border-radius: 16px;
+    background: #FBFBFB;
+    margin: 6px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.uploadimage div:nth-of-type(1){
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.uploadimage img {
+    width: 171px;
+    height: 151px;
+    border-radius: 16px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.formcontain form label {
     color: #252525;
     font-family: Gilroy-Medium;
     font-size: 18px;
 }
-.formcontain form input{
+
+.formcontain form input {
     width: 100%;
     font-size: 16px;
     font-weight: 500;
@@ -66,24 +98,25 @@ font-family: Gilroy-Regular;
     border-radius: 16px;
     text-indent: 20px;
 }
-.formcontain form input::placeholder{
+
+.formcontain form input::placeholder {
     color: #252525;
-font-family: Gilroy-Regular;
-font-size: 16px;
-font-weight: 500;
-}
-.formcontain div:nth-of-type(3){
-
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.emails{
-width: 330px;
-/* background-color: red; */
-display: flex;
-flex-wrap: wrap;
-padding: 8px;
+.formcontain div:nth-of-type(3) {}
+
+.emails {
+    width: 330px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
 }
-#emailsdiv{
+
+#emailsdiv {
     font-size: 16px;
     font-weight: 500 !important;
     display: flex;
@@ -101,17 +134,18 @@ padding: 8px;
 }
 
 
-.formcontain div:nth-of-type(4) button{
-width: 100%;
-border-radius: 16px;
-background: #2BAC76;
-border: none;
-color: white;
-height: 48px;
-font-size: 16px;
-font-weight: 600;
-margin-top: 10px;
+.formcontain div:nth-of-type(4) button {
+    width: 100%;
+    border-radius: 16px;
+    background: #2BAC76;
+    border: none;
+    color: white;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
 }
-.formcontain div:nth-of-type(4) button:disabled{
+
+.formcontain div:nth-of-type(4) button:disabled {
     background: #2bac7675;
 }

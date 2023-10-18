@@ -138,6 +138,7 @@ padding: 5px;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .createcenter div:nth-of-type(6) {
@@ -188,4 +189,5 @@ padding: 5px;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
