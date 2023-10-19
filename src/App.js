@@ -7,6 +7,7 @@ import {Route,Routes } from 'react-router-dom';
 import Workspace from './Components/Workspace/Workspace';
 import EmailList from './Components/Resetpass/Resetpass';
 import CreateWorkspace from './Components/CreateWorkspace/CreateWorkspace';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
 <Route path='/workspace' element={<Workspace/>}/>
 <Route path='/createspace' element={<CreateWorkspace/>}/>
 <Route path='/resetpasward' element={<Resetpass/>}/>
+
+<Route path='/dashboard' element={<Dashboard/>}/>
 {/* <Route path='/' element={<EmailList/>}/> */}
     </Routes>
     </>
