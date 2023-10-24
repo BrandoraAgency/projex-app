@@ -131,3 +131,14 @@ color: #363F5E;
 }
 
 
+@media(max-width:1024px){
+    .s2ma {
+        width: 100px;
+    }
+}
+
+@media(max-width:500px){
+    .s2ma {
+        width: 80px;
+    }
+}

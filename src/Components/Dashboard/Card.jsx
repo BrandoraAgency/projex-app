@@ -3,9 +3,10 @@ import './Card.css';
 import cardimg from '../../Asserts/Images/cardgroup.svg'
 
 export default function Card() {
+
   return (
     <>
-    <div className='card'>
+    <div className='card' >
      <div className='had'>
 <div className='ch2'>
 UI UX Project
@@ -39,3 +40,5 @@ UI UX Project
     </>
   )
 }
+
+

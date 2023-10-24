@@ -3,7 +3,7 @@ import './Dashbord.css';
 import  userimg from '../../Asserts/Images/userimg.svg'
 import dashlogo from '../../Asserts/Images/dashlogo.png'
 
-export default function Navbar() {
+export default function Navbar({showtask}) {
   return (
     <>
     <div className='dmain'>
@@ -15,7 +15,7 @@ export default function Navbar() {
   <path d="M25.1853 34.4648C30.7189 34.4648 35.2048 29.9789 35.2048 24.4453C35.2048 18.9117 30.7189 14.4258 25.1853 14.4258C19.6517 14.4258 15.1658 18.9117 15.1658 24.4453C15.1658 29.9789 19.6517 34.4648 25.1853 34.4648Z" stroke="#252525" stroke-width="3.16406" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </div>
-        <div className='star'><span className='dic'><svg xmlns="http://www.w3.org/2000/svg" width="47" height="45" viewBox="0 0 47 45" fill="none">
+        <div className='star' onClick={showtask}><span className='dic'><svg xmlns="http://www.w3.org/2000/svg" width="47" height="45" viewBox="0 0 47 45" fill="none">
   <rect x="1.27643" width="35" height="35" rx="22.5" fill="#F9F9F9"/>
   <path d="M31.8176 22.5001L23.3801 22.5001M23.3801 22.5001L14.9426 22.5001M23.3801 22.5001L23.3801 14.0625M23.3801 22.5001L23.3801 30.9375" stroke="#2BAC76" stroke-width="2.8125" stroke-linecap="round"/>
 </svg> </span>Start Project</div>

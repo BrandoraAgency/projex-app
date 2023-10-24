@@ -10,15 +10,16 @@
     height: 40px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 20px 0px 20px;
     margin-top: 20px;
     align-items: center;
     font-family: "Gilroy-Medium";
     flex-wrap: wrap;
 }
 .dimg1 img{
-    height: 30px;
-    width: 56px;
+    height: 22px;
+    width: 40px;
+
 }
 .ddas{
     /* font-family: 'Montserrat'; */
@@ -77,6 +78,8 @@ outline: none;
     height: 36px;
     width: 148px;
     gap: 10px;
+    cursor: pointer;
+    z-index: 10;
     border-radius: 100px;
     font-size: 14px;
     color: #FFFFFF;
@@ -133,18 +136,18 @@ font-size: 14px;
 }
 .maicard{
     margin-top: 10px;
-    padding: 10px 20px 0px 20px;
+    padding: 5px 5px 0px 5px;
     background: #FBFBFB;
 border-radius: 20px;
-width: 900px;
+width: 82%;
 overflow-y: scroll;
 height:87vh;
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-   
+    margin: 0px;
+    gap: 10px;
 }
 .maicard::-webkit-scrollbar {
     width: 5px;
@@ -167,6 +170,6 @@ height:87vh;
 
 .side2{
     margin-top: 20px;
-    width: 320px;
+    width: 300px;
     height: 86vh;
 }
