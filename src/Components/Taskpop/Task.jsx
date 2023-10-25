@@ -36,6 +36,7 @@ function Task() {
   const [section, setSection] = useState(1);
   const [projectTitle, setProjectTitle] = useState('');
   const [description, setDescription] = useState('');
+  const [showMoreUsers, setShowMoreUsers] = useState(false);
 
   const handleNext = () => {
     if (section < 2) {
@@ -47,6 +48,10 @@ function Task() {
     if (section > 1) {
       setSection(section - 1);
     }
+  };
+
+  const toggleShowMore = () => {
+    setShowMoreUsers(!showMoreUsers);
   };
 
   return (
@@ -110,12 +115,31 @@ function Task() {
 <input type="checkbox" /> <img src={user} alt="" /> <div id='username'>Daniyal Khan (You) <br /> <span>UI UX Designer</span></div>
 </div>
 
-<div className="userdiv">
-<input type="checkbox" /> <img src={user} alt="" /> <div id='username'>Daniyal Khan (You) <br /> <span>UI UX Designer</span></div>
-</div>
-</div>
+{showMoreUsers && (
+              <div className="userdiv">
+              <input type="checkbox" /> <img src={user} alt="" /> <div id='username'>Daniyal Khan (You) <br /> <span>UI UX Designer</span></div>
+              </div>
+            )}
 
-              <button onClick={handlePrevious}>Previous</button>
+            {showMoreUsers && (
+             <div className="userdiv">
+             <input type="checkbox" /> <img src={user} alt="" /> <div id='username'>Daniyal Khan (You) <br /> <span>UI UX Designer</span></div>
+             </div>
+            )}
+
+            {showMoreUsers && (
+              <div className="userdiv">
+              <input type="checkbox" /> <img src={user} alt="" /> <div id='username'>Daniyal Khan (You) <br /> <span>UI UX Designer</span></div>
+              </div>
+            )}
+
+
+</div>
+{showMoreUsers? (
+<div onClick={toggleShowMore}>Show Less</div> ) :(
+    <div onClick={toggleShowMore}>Show More</div>
+)}
+              {/* <button onClick={handlePrevious}>Previous</button> */}
               <button>Assign Task</button>
             </div>
             </>

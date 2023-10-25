@@ -2,14 +2,14 @@ import React from 'react'
 import './Buttons.css'
 import Card from './Card'
 
-function Overdue() {
+function Overdue({chat}) {
   return (
     <>
     <div className='overdue'>
 <div className='buttondiv'>
 Overdue
 </div>
-<Card/>
+<Card showchat={chat}/>
 
 
     </div>

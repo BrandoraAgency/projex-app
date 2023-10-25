@@ -2,11 +2,11 @@ import React from 'react'
 import './Card.css';
 import cardimg from '../../Asserts/Images/cardgroup.svg'
 
-export default function Card() {
+export default function Card({showchat}) {
 
   return (
     <>
-    <div className='card' >
+    <div className='card' onClick={showchat}>
      <div className='had'>
 <div className='ch2'>
 UI UX Project

@@ -1,14 +1,14 @@
 import React from 'react'
 import './Buttons.css'
 import Card from './Card';
-function Inprogress() {
+function Inprogress({chat}) {
   return (
     <>
      <div className='progress'>
 <div className='buttondiv4'>
 In Progress
 </div>
-<Card/>
+<Card showchat={chat}/>
 
 
 

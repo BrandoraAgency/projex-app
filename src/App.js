@@ -8,6 +8,8 @@ import Workspace from './Components/Workspace/Workspace';
 import EmailList from './Components/Resetpass/Resetpass';
 import CreateWorkspace from './Components/CreateWorkspace/CreateWorkspace';
 import Dashboard from './Components/Dashboard/Dashboard';
+import File from './Components/Filesmembers/File';
+import Members from './Components/Filesmembers/Members';
 
 function App() {
   return (
@@ -19,8 +21,13 @@ function App() {
 <Route path='/createspace' element={<CreateWorkspace/>}/>
 <Route path='/resetpasward' element={<Resetpass/>}/>
 
-<Route path='/dashboard' element={<Dashboard/>}/>
+<Route path='/dashboard' element={<Dashboard/>}>
+<Route path="members" element={<Members/>} />
+<Route path="file" element={<File/>} />
+</Route>
 {/* <Route path='/' element={<EmailList/>}/> */}
+<Route path="/file" element={<File/>} />
+
     </Routes>
     </>
   );
