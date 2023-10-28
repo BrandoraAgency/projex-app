@@ -10,7 +10,7 @@ import Inprogress from './Inprogress';
 import Waiting from './Waiting';
 import Task from '../Taskpop/Task';
 import Chat from '../Chat/Chat';
-import File from '../Filesmembers/File';
+// import File from '../Filesmembers/File';
 import { Outlet } from 'react-router-dom';
 export default function Dashboard() {
 
@@ -32,7 +32,7 @@ export default function Dashboard() {
   return (
     <>
 
-      <Navbar showtask={showtask}/>
+      <Navbar showtask={showtask} />
       <div className='na'>
         <div className='slider'>
           {/* <Sidebar showsetting={showsetting} /> */}
@@ -51,7 +51,7 @@ export default function Dashboard() {
         </div>
         <div className='side2'><Sidee /></div>
         {task && (
-  <Task/>
+  <Task showtask={showtask} />
 )}
 
 {chat && (

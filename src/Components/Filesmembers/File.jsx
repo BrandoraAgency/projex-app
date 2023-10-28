@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './File.css'
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import user from '../../Asserts/Images/cardimg.svg'
 
 function File() {

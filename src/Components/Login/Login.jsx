@@ -4,11 +4,16 @@ import './Login.css'
 import logo from '../../Asserts/Images/logo.svg'
 import image from '../../Asserts/Images/login.svg'
 // material ui icons
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+// import MailOutlineIcon from '@mui/icons-material/MailOutline';
+// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+
+// iconify
+
+import { Icon } from '@iconify/react';
 
 import { NavLink, useNavigate } from 'react-router-dom'
 import axios from 'axios';
+
 
 function Login() {
 
@@ -47,7 +52,7 @@ function Login() {
 
   return (
     <>
-      <div className="mloginup">
+        <div className="mloginup">
         <div className="loginleft">
           <img className='loginlogo' src={logo} alt="" />
           <div><img src={image} alt="" /></div>
@@ -63,23 +68,23 @@ function Login() {
             </div>
             <form onSubmit={handleSubmit}>
               <label className="emi">Email*</label><br />
-              <div className="gmi11"> <MailOutlineIcon />
+              <div className="gmi11"> <Icon icon="clarity:email-line" />
               </div>
 
               <input
                 type="email"
-                placeholder="Email address"
+                placeholder="Enter Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <br />
               <label className="pas">Pasword*</label><br />
-              <div className="gmi22"> <LockOutlinedIcon />
+              <div className="gmi22"> <Icon icon="ion:lock-open-outline" />
               </div>
 
               <input
                 type={showPassword ? 'text' : 'password'}
-                placeholder="Password"
+                placeholder="Enter Your Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -91,7 +96,7 @@ function Login() {
                       checked={showPassword}
                       onChange={handleCheckboxChange}
                       type="checkbox"
-                      style={{ "width": "18px", "height": "18px" }}
+                      style={{ "width": "18px", "height": "16px" }}
                     />
                   </div>
                   <div className="sho">Show pasword</div>
@@ -106,7 +111,7 @@ function Login() {
               </div>
             </form>
 
-            <div className='ore'>OR </div>
+            <div className='ore'>Or </div>
 
             <div className="google" onClick={loginwithgoogle}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -120,7 +125,7 @@ function Login() {
             </div>
 
             <div className="button">
-              Don’t Have An Account Yet? <NavLink to="/signup">SIGN-UP</NavLink>
+              Don’t Have An Account Yet? <NavLink to="/signup"><span>SIGN-UP</span></NavLink>
             </div>
           </div>
         </div>

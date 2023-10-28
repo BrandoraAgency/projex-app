@@ -1,12 +1,5 @@
-/* @font-face {
-    font-family: "Gilroy-Medium";
-    src: local("Gilroy-Medium"),
-      url("../../asserts/font/Fonts/Gilroy/Gilroy-Bold.ttf") format("opentype") 
-} */
-*{
-    font-family: "Gilroy-Medium"; 
-}
-.dmain{
+
+.dmain {
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -15,48 +8,53 @@
     align-items: center;
     font-family: "Gilroy-Medium";
     flex-wrap: wrap;
+
 }
-.dimg1 img{
+
+.dimg1 img {
     height: 22px;
     width: 40px;
 
 }
-.ddas{
-    /* font-family: 'Montserrat'; */
-    font-family: "Gilroy-Medium";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+
+.ddas {
+    font-family: Gilroy-SemiBold;
+    font-weight: 400;
+    font-size: 25px;
 }
-.ser{
+
+.ser {
     display: flex;
     justify-content: center;
     align-items: center;
-position: relative;
+    position: relative;
 }
 
-.ser input{
+.ser input {
     font-family: "Gilroy-Medium";
     height: 40px;
-    width: 240px;
-border-radius: 16px;
-background: #FBFBFB;
-border-radius: 16px;
-border: none;
-text-indent: 20px;
-outline: none;
+    width: 350px;
+    border-radius: 16px;
+    background: #F6F6F6;
+    border-radius: 16px;
+    border: none;
+    text-indent: 20px;
+    outline: none;
 }
-.ser input::placeholder{
+
+.ser input::placeholder {
     font-size: 16px;
     color: #1C274C;
     opacity: 0.4;
 }
-.ser svg{
+
+.ser svg {
     position: absolute;
     top: -2px;
     right: 5px;
 }
-.dic{
+
+.dic {
     background-color: white;
     width: 25px;
     height: 25px;
@@ -65,52 +63,61 @@ outline: none;
     justify-content: center;
     align-items: center;
 }
-.dic svg{
+
+.dic svg {
     width: 25px;
     height: 25px;
     border-radius: 50%;
 }
-.star{
+
+.star {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 36px;
-    width: 148px;
+    height: 40px;
+    width: 140px;
     gap: 10px;
     cursor: pointer;
-    z-index: 7;
+    z-index: 10;
     border-radius: 100px;
     font-size: 14px;
     color: #FFFFFF;
-    background: #4CAF50;
+    background: #2BAC76;
+    font-family: Gilroy-SemiBold;
+    font-weight: 400;
 }
-.dani{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
+
+.dani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.name{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+
+.name {
+    font-family: Gilroy-Regular;
+    font-weight: 400;
     font-size: 16px;
     color: #0D062D;
-     /* padding-right: 10px; */
+
+    /* padding-right: 10px; */
 }
-.da{
-color: #787486;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
+
+.da {
+    color: #787486;
+    font-family: Gilroy-Regular;
+    font-weight: 400;
+    font-size: 14px;
+
 }
-.noti{
-   /* margin: 10px 0px 0px 15px; */
-   position: relative;
+
+.noti {
+    /* margin: 10px 0px 0px 15px; */
+    position: relative;
 }
-.noti div:nth-of-type(1){
+
+.noti div:nth-of-type(1) {
     width: 8px;
     height: 8px;
     background-color: #4CAF50;
@@ -119,7 +126,8 @@ font-size: 14px;
     top: -4px;
     right: 0px;
 }
-.dimgd img{
+
+.dimgd img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -128,27 +136,31 @@ font-size: 14px;
 /* code for exported componet */
 
 
-.na{
+.na {
     display: flex;
 }
-.slider{
 
-}
-.maicard{
+.slider {}
+
+.maicard {
     margin-top: 10px;
     padding: 5px 5px 0px 5px;
     background: #FBFBFB;
-border-radius: 20px;
-width: 82%;
-overflow-y: scroll;
-height:87vh;
+    border-radius: 20px;
+    width: 82%;
+    overflow-y: scroll;
+    height: 87vh;
 }
-.cards{
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
     gap: 10px;
+    background: #EAEDFE;
+    padding-left: 2rem;
 }
+
 .maicard::-webkit-scrollbar {
     width: 5px;
 }
@@ -168,7 +180,7 @@ height:87vh;
 }
 
 
-.side2{
+.side2 {
     margin-top: 20px;
     width: 300px;
     height: 86vh;

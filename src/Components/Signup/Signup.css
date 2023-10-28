@@ -30,6 +30,7 @@
 
 .signright {
     width: 40%;
+    height: 100vh;
     background: #EAEDFE;
     padding-top: 40px;
     display: flex;
@@ -39,19 +40,20 @@
 
 
 .sign {
-    font-family: "Gilroy-Medium";
+    font-family: Gilroy-SemiBold;
     font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 25px;
     color: #2E3032;
 }
 
 .enter {
     color: #2E3032;
-    font-family: 'Gilroy-Medium';
+    font-family: Gilroy-Regular;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    opacity: 0.3;
+    font-size: 16px;
     padding: 10px 0px 20px 0px;
 }
 
@@ -61,8 +63,9 @@ form {
 
 .emi {
     color: #2E3032;
-    font-family: 'Gilroy-Medium';
-    font-size: 18px;
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    font-weight: 400;
     padding: 30px 0px 0px 0px;
 }
 
@@ -76,6 +79,7 @@ form input {
     text-indent: 60px;
     font-size: 15px;
     font-weight: 500;
+    font-family: Gilroy-Regular;
 }
 
 form input:focus {
@@ -83,23 +87,26 @@ form input:focus {
 }
 
 form input::placeholder {
-    font-family: 'Poppins';
+    font-family: Gilroy-Regular;
+    opacity: 0.5;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #2E3032;
+    
 }
 
 .pas {
     font-family: 'Gilroy-Medium';
-    font-size: 18px;
     color: #2E3032;
     padding: 10px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .con {
     font-family: 'Gilroy-Medium';
-    font-size: 18px;
+    font-size: 16px;
     color: #2E3032;
     padding: 10px 0px 0px 0px;
 }
@@ -110,8 +117,8 @@ form input::placeholder {
     background: #2bac76;
     border-radius: 10px;
     font-size: 16px;
-    font-weight: 500;
-    font-family: 'Gilroy-Medium';
+    font-weight: 400;
+    font-family: Gilroy-SemiBold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,8 +195,9 @@ form input::placeholder {
 
 .google {
     width: 403px;
-    height: 48px;
-    background: #fff;
+    height: 52px;
+    border: 1px solid #2bac76 !important;
+    font-family: Gilroy-Medium;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -199,6 +207,8 @@ form input::placeholder {
     border: none;
     margin-top: 15px;
     cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
 }
 
 
