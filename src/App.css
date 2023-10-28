@@ -1,12 +1,24 @@
-@font-face {
-  font-family: "Gilroy-Medium";
-  src: url(./Asserts/Fonts/Fonts/Gilroy/Gilroy-BoldItalic.ttf);
-}
-body{
-  /* font-family: "Gilroy-Medium"; */
-}
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url('./Asserts/Fonts/Fonts/Gilroy/Gilroy-SemiBold.ttf');
+}
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url('./Asserts/Fonts/Fonts/Gilroy/Gilroy-Regular.ttf');
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url('./Asserts/Fonts/Fonts/Gilroy/Gilroy-Medium.ttf');
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url('./Asserts/Fonts/Fonts/Gilroy/Gilroy-Bold.ttf');
 }

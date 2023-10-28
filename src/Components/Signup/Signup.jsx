@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
 // material ui icons
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import LockOutlinedIcon2 from '@mui/icons-material/LockOutlined';
+// import MailOutlineIcon from '@mui/icons-material/MailOutline';
+// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+// import LockOutlinedIcon2 from '@mui/icons-material/LockOutlined';
+
+// iconify
+
+import { Icon } from '@iconify/react';
+
+
 // images
 import logo from '../../Asserts/Images/logo.svg'
 import image from '../../Asserts/Images/signup.svg'
@@ -60,7 +66,7 @@ function Signup() {
             </div>
             <form onSubmit={handleSubmit}>
               <label className="emi">Email*</label><br />
-              <div className="gmi1"> <MailOutlineIcon />
+              <div className="gmi1"> <Icon icon="clarity:email-line" />
               </div>
               <input
                 type="email"
@@ -71,7 +77,7 @@ function Signup() {
 
               <br />
               <label className="pas">Pasword*</label><br />
-              <div className="gmi2"> <LockOutlinedIcon />
+              <div className="gmi2"> <Icon icon="akar-icons:lock-off" />
               </div>
 
               <input
@@ -83,7 +89,7 @@ function Signup() {
               <br />
 
               <label className="con">Confirm Password*</label><br />
-              <div className="gmi3"><LockOutlinedIcon2 />
+              <div className="gmi3"><Icon icon="akar-icons:lock-off" />
               </div>
 
               <input
@@ -111,7 +117,7 @@ function Signup() {
               Sign Up with Google
             </div>
             <div className="button">
-              Already Have An Account? <NavLink to="/">LOGIN</NavLink>
+              Already Have An Account? <NavLink to="/"><span>LOGIN</span></NavLink>
             </div>
           </div>
 
