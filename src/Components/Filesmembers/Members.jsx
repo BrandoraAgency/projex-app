@@ -18,7 +18,7 @@ function Members() {
         <div className="filecontainer">
           <div>Setting</div>
           <div id='members'>
-          <NavLink to="/dashboard/file">Files</NavLink>
+          <NavLink to="/dashboard/file">File</NavLink>
             <NavLink to="/dashboard/members">Members</NavLink>
           </div>
           <div>
